@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-W3QQZG5Q');</script>
+  <!-- End Google Tag Manager -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Demo landing page concept for a Rubbermaid Commercial facility cleaning campaign." />
+  <title>Facility Cleaning Solutions | Campaign Demo</title>
+  <style>
+    :root{
+      --navy:#0d1b2a; --navy2:#15304b; --blue:#1f6feb; --ink:#142033;
+      --muted:#667085; --line:#dfe5ec; --soft:#f5f8fb; --white:#fff;
+      --success:#117a55; --shadow:0 18px 45px rgba(15,35,60,.10);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:#fff;line-height:1.5}
+    a{text-decoration:none;color:inherit}
+    button,input,select{font:inherit}
+    .topbar{background:#081522;color:#d7e2ee;font-size:13px;text-align:center;padding:8px 16px;letter-spacing:.02em}
+    .nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid rgba(223,229,236,.8)}
+    .nav-inner{max-width:1180px;margin:auto;min-height:74px;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:0 24px}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:-.02em}
+    .brand-mark{width:42px;height:42px;border-radius:12px;background:linear-gradient(135deg,var(--navy),var(--blue));color:white;display:grid;place-items:center;font-size:18px;box-shadow:0 7px 20px rgba(31,111,235,.22)}
+    .brand small{display:block;color:var(--muted);font-size:11px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;margin-top:1px}
+    .nav-cta{background:var(--navy);color:white;padding:11px 16px;border-radius:10px;font-weight:700;font-size:14px}
+    .hero{background:radial-gradient(circle at 80% 20%,rgba(90,162,255,.22),transparent 34%),linear-gradient(135deg,#0c1a28 0%,#132b44 58%,#173b61 100%);color:white;overflow:hidden}
+    .hero-inner{max-width:1180px;margin:auto;display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:center;padding:72px 24px 68px}
+    .eyebrow{display:inline-flex;align-items:center;gap:8px;padding:7px 11px;border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.06);border-radius:999px;color:#dcecff;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;margin-bottom:18px}
+    h1{font-size:clamp(42px,5.8vw,68px);line-height:1.02;letter-spacing:-.045em;margin:0 0 20px;max-width:760px}
+    .hero p{font-size:18px;line-height:1.65;color:#d7e2ee;max-width:680px;margin:0 0 28px}
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:34px}
+    .btn{border:0;cursor:pointer;border-radius:11px;padding:14px 18px;font-weight:800;transition:.2s ease}
+    .btn-primary{background:white;color:var(--navy)}
+    .btn-primary:hover{transform:translateY(-1px)}
+    .btn-secondary{background:transparent;color:white;border:1px solid rgba(255,255,255,.25)}
+    .hero-stats{display:flex;gap:30px;flex-wrap:wrap;color:#c9d8e7;font-size:13px}
+    .hero-stats strong{display:block;color:white;font-size:18px;margin-bottom:2px}
+    .hero-visual{min-height:420px;display:grid;place-items:center}
+    .visual-card{width:min(430px,100%);background:linear-gradient(180deg,#f9fbfd,#eaf1f7);border:1px solid rgba(255,255,255,.5);border-radius:30px;padding:30px;color:var(--ink);box-shadow:0 30px 70px rgba(0,0,0,.25);transform:rotate(2deg)}
+    .visual-title{font-size:13px;font-weight:800;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:20px}
+    .product-stack{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+    .product-tile{border-radius:18px;background:white;min-height:125px;padding:18px;border:1px solid var(--line);display:flex;flex-direction:column;justify-content:space-between}
+    .product-icon{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;font-size:22px;background:#eef5ff}
+    .product-tile strong{font-size:14px}.product-tile span{font-size:12px;color:var(--muted)}
+    .section{padding:72px 24px}.section-inner{max-width:1180px;margin:auto}
+    .section-head{max-width:760px;margin-bottom:32px}.section-head h2{font-size:36px;line-height:1.1;letter-spacing:-.035em;margin:0 0 10px}.section-head p{color:var(--muted);font-size:16px;margin:0}
+    .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .card{border:1px solid var(--line);background:white;border-radius:18px;padding:22px;box-shadow:0 8px 22px rgba(19,40,61,.04)}
+    .card-icon{width:46px;height:46px;border-radius:13px;display:grid;place-items:center;background:var(--soft);font-size:22px;margin-bottom:16px}
+    .card h3{margin:0 0 7px;font-size:18px;letter-spacing:-.02em}.card p{color:var(--muted);margin:0;font-size:14px}
+    .form-section{background:var(--soft);padding:78px 24px}
+    .form-wrap{max-width:1060px;margin:auto;display:grid;grid-template-columns:.85fr 1.15fr;gap:44px;align-items:start}
+    .form-copy h2{font-size:38px;letter-spacing:-.035em;line-height:1.08;margin:0 0 14px}.form-copy p{color:var(--muted);margin:0 0 22px}
+    .checklist{display:grid;gap:11px;font-size:14px}.check{display:flex;align-items:center;gap:10px}.check span:first-child{width:22px;height:22px;border-radius:999px;display:grid;place-items:center;background:#e5f6ef;color:var(--success);font-weight:900;font-size:12px}
+    .lead-card{background:white;border:1px solid var(--line);border-radius:22px;padding:28px;box-shadow:var(--shadow)}
+    .lead-card h3{margin:0 0 4px;font-size:22px}.lead-card .sub{color:var(--muted);font-size:14px;margin-bottom:22px}
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    .field{display:flex;flex-direction:column;gap:7px;margin-bottom:14px}.field label{font-size:12px;font-weight:800;color:#344054}
+    .field input,.field select{border:1px solid #d0d5dd;border-radius:10px;padding:12px 13px;outline:none;background:white}
+    .field input:focus,.field select:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(31,111,235,.10)}
+    .submit{width:100%;background:var(--blue);color:white;padding:14px 16px;margin-top:3px}.micro{margin-top:10px;text-align:center;font-size:11px;color:#98a2b3}
+    .success{display:none;padding:28px;border-radius:18px;background:#edf9f4;border:1px solid #c9eadc;color:#0e5d42}.success h3{margin:0 0 8px;font-size:22px}.success p{margin:0;color:#2f6f5b}
+    .tracking{padding:58px 24px 70px;background:white}.tracking-box{max-width:1180px;margin:auto;border:1px dashed #b9c5d2;background:#fbfcfe;border-radius:18px;padding:24px}
+    .tracking-box h3{margin:0 0 8px}.tracking-box p{margin:0;color:var(--muted);font-size:14px}code{background:#eef2f6;border-radius:6px;padding:2px 6px;font-size:12px}
+    footer{border-top:1px solid var(--line);padding:24px;color:#667085;text-align:center;font-size:12px}
+    @media(max-width:900px){.hero-inner,.form-wrap{grid-template-columns:1fr}.hero-visual{min-height:auto}.cards{grid-template-columns:1fr 1fr}}
+    @media(max-width:620px){.nav-inner{padding:0 16px}.nav-cta{display:none}.hero-inner{padding:54px 18px}.section,.form-section,.tracking{padding-left:18px;padding-right:18px}.cards,.grid-2{grid-template-columns:1fr}.hero-stats{gap:18px}h1{font-size:42px}}
+  </style>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function pushEvent(eventName, params = {}) {
+      window.dataLayer.push({ event: eventName, ...params });
+      console.log("dataLayer event:", eventName, params);
+    }
+  </script>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W3QQZG5Q"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <div class="topbar">Demo campaign concept for interview preparation — not an official Rubbermaid Commercial page.</div>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="#">
+        <div class="brand-mark">RC</div>
+        <div>Facility Solutions<small>Rubbermaid Commercial campaign demo</small></div>
+      </a>
+      <a href="#lead-form" class="nav-cta" onclick="pushEvent('cta_click',{cta_location:'nav',cta_text:'Request Product Information'})">Request Product Information</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="hero-inner">
+        <div>
+          <div class="eyebrow">Commercial Facility Cleaning</div>
+          <h1>Cleaning solutions built for demanding facilities.</h1>
+          <p>Explore professional-grade cleaning, waste, and material-handling solutions designed to help facilities operate cleaner, safer, and more efficiently.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#lead-form" onclick="pushEvent('cta_click',{cta_location:'hero',cta_text:'Request Product Information'})">Request Product Information</a>
+            <a class="btn btn-secondary" href="#solutions" onclick="pushEvent('cta_click',{cta_location:'hero',cta_text:'Explore Solutions'})">Explore Solutions</a>
+          </div>
+          <div class="hero-stats">
+            <div><strong>4</strong> Core product groups</div>
+            <div><strong>B2B</strong> Facility-focused campaign</div>
+            <div><strong>Demo</strong> GTM + GA4 ready</div>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="visual-card">
+            <div class="visual-title">Facility Cleaning Solutions</div>
+            <div class="product-stack">
+              <div class="product-tile"><div class="product-icon">🧹</div><div><strong>Mops & Microfiber</strong><br><span>Everyday floor care</span></div></div>
+              <div class="product-tile"><div class="product-icon">🛒</div><div><strong>Cleaning Carts</strong><br><span>Mobile productivity</span></div></div>
+              <div class="product-tile"><div class="product-icon">♻️</div><div><strong>Waste & Recycling</strong><br><span>Facility management</span></div></div>
+              <div class="product-tile"><div class="product-icon">🧽</div><div><strong>Surface Cleaning</strong><br><span>High-touch environments</span></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="solutions">
+      <div class="section-inner">
+        <div class="section-head">
+          <h2>One campaign. Multiple facility needs.</h2>
+          <p>A paid ad sends a visitor here, they explore a relevant solution, then submit a product-information request that we can track as a conversion.</p>
+        </div>
+        <div class="cards">
+          <div class="card"><div class="card-icon">🧹</div><h3>Floor Care</h3><p>Mops, microfiber, buckets, and floor-care systems for daily cleaning workflows.</p></div>
+          <div class="card"><div class="card-icon">🛒</div><h3>Cleaning Carts</h3><p>Organized mobile systems designed to help teams move through facilities efficiently.</p></div>
+          <div class="card"><div class="card-icon">♻️</div><h3>Waste & Recycling</h3><p>Waste-management solutions for offices, healthcare, education, and commercial spaces.</p></div>
+          <div class="card"><div class="card-icon">🧽</div><h3>Surface Cleaning</h3><p>Tools and accessories that support consistent cleaning across high-use environments.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="form-section" id="lead-form">
+      <div class="form-wrap">
+        <div class="form-copy">
+          <h2>Find the right solution for your facility.</h2>
+          <p>Tell us what you’re looking for and a product specialist can follow up with relevant options for your facility or organization.</p>
+          <div class="checklist">
+            <div class="check"><span>✓</span><div>Choose the product category you’re interested in</div></div>
+            <div class="check"><span>✓</span><div>Submit a simple B2B lead form</div></div>
+            <div class="check"><span>✓</span><div>Track the conversion later with GTM + GA4</div></div>
+          </div>
+        </div>
+
+        <div class="lead-card">
+          <div id="formContainer">
+            <h3>Request Product Information</h3>
+            <div class="sub">Complete the form below to continue.</div>
+            <form id="demoLeadForm">
+              <div class="grid-2">
+                <div class="field"><label for="name">Full Name</label><input id="name" name="name" type="text" placeholder="Kris Gilliond" required /></div>
+                <div class="field"><label for="company">Company</label><input id="company" name="company" type="text" placeholder="Your company" required /></div>
+              </div>
+              <div class="field"><label for="email">Work Email</label><input id="email" name="email" type="email" placeholder="name@company.com" required /></div>
+              <div class="field">
+                <label for="interest">Product Interest</label>
+                <select id="interest" name="interest" required>
+                  <option value="">Select a product category</option>
+                  <option value="floor-care">Floor Care</option>
+                  <option value="cleaning-carts">Cleaning Carts</option>
+                  <option value="waste-recycling">Waste & Recycling</option>
+                  <option value="surface-cleaning">Surface Cleaning</option>
+                </select>
+              </div>
+              <button class="btn submit" type="submit">Request Product Information</button>
+              <div class="micro">Demo only — form submissions are not sent anywhere.</div>
+            </form>
+          </div>
+
+          <div class="success" id="successState">
+            <h3>Request received.</h3>
+            <p>This is our demo conversion. In the next step, GTM will detect this submission and send a <strong>form_submit</strong> event into GA4.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tracking">
+      <div class="tracking-box">
+        <h3>Built for the next step: GTM + GA4</h3>
+        <p>This page already pushes <code>cta_click</code>, <code>form_start</code>, and <code>form_submit</code> events into the browser <code>dataLayer</code>. In Step 2, we’ll install your actual Google Tag Manager container and turn those into real tracking events.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>Demo campaign concept for training/interview preparation. Not affiliated with or endorsed by Rubbermaid Commercial Products.</footer>
+
+  <script>
+    let formStarted = false;
+    const form = document.getElementById("demoLeadForm");
+    const fields = form.querySelectorAll("input, select");
+
+    fields.forEach(field => {
+      field.addEventListener("focus", () => {
+        if (!formStarted) {
+          formStarted = true;
+          pushEvent("form_start", { form_name: "product_information_request" });
+        }
+      }, { once: true });
+    });
+
+    form.addEventListener("submit", function(e){
+      e.preventDefault();
+      const interest = document.getElementById("interest").value || "not_selected";
+
+      pushEvent("form_submit", {
+        form_name: "product_information_request",
+        product_interest: interest,
+        lead_type: "b2b_product_inquiry"
+      });
+
+      document.getElementById("formContainer").style.display = "none";
+      document.getElementById("successState").style.display = "block";
+      document.getElementById("successState").scrollIntoView({ behavior:"smooth", block:"center" });
+    });
+  </script>
+</body>
+</html>
